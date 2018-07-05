@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Here goes the metadata -->  
+      <script type="text/javascript" src="script.js"></script>
+      <meta charset="utf-8">
+      <title> HTML5 basics </title>
+   </head>
+   <body>
+   	<form method="post" action="http://127.0.0.1:65000/squadra">
+   		<p> Squadra da inserire: <input type="text" name="squ"> </p>
+         <!-- <p> Risposta: <input type="text" name="ris"> </p> -->
+   		<p> <input type="submit" value="Invia Squadra"> </p>
+	</form>
+
+   <hr>
+
+      <form method="post" action="http://127.0.0.1:65000/torneo">
+         <p> <input type="submit" value="Crea Torneo"> </p>
+   </form>
+
+   <hr>
+
+   <form method="get" action="http://127.0.0.1:65000/prossimaPartita" id="myform2">
+         <p> <input type="submit" value="Ottieni prossima partita"> </p>
+   </form>
+
+   <hr>
+
+   <form method="post" action="http://127.0.0.1:65000/risultato" id="myform3">
+         <!--  <h1>Risultato: <span id="ris"> </span></h1> -->
+         <!--  <p> Indice domanda(: <input type="text" name="a" placeholder="indice domanda"> </p>   -->
+         <p> Squadra 1: <input type="text" name="squ1"> </p>
+         <p> Squadra 2: <input type="text" name="squ2"> </p>
+         <p> Risultato: <input type="text" name="ris"> </p>
+         <p> <input type="submit" value="Invia Risultato"> </p>
+   </form>
+
+   <hr>
+
+   <form method="get" action="http://127.0.0.1:65000/torneo" id="myform4">
+         <p> <input type="submit" value="Situazione Attuale"> </p>
+   </form>
+
+   <hr>
+
+   <form method="get" action="http://127.0.0.1:65000/vittoria" id="myform5">
+         <p> <input type="submit" value="Ottieni vincitore"> </p>
+   </form>
+
+   <hr>
+
+   <form method="delete" action="http://127.0.0.1:65000/torneo" id="myform6">
+         <p> <input type="submit" value="Cancella tutto"> </p>
+   </form>
+
+                                    
+   </body>
+</html>
